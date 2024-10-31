@@ -1,0 +1,29 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Modelo ER" id="gFq9hxLMuWxEuj5Ad1g4">
+    <mxGraphModel dx="1063" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" parent="1">
+          <mxCell id="1" parent="0" />
+        </mxCell>
+        <mxCell id="Cart" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="180" />
+          <mxCell id="Cart-Attributes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;shadow=0;" value="cart_id (PK)&#xa;username (FK)&#xa;valor&#xa;products&#xa;created_at" parent="Cart" />
+        </mxCell>
+        <mxCell id="Products" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="120" height="220" />
+          <mxCell id="Products-Attributes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;shadow=0;" value="product_id (PK)&#xa;product_name&#xa;description&#xa;price&#xa;stock&#xa;created_at&#xa;updated_at&#xa;imagen" parent="Products" />
+        </mxCell>
+        <mxCell id="Users" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="120" height="180" />
+          <mxCell id="Users-Attributes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;shadow=0;" value="user_id (PK)&#xa;username&#xa;email&#xa;password_hash&#xa;created_at" parent="Users" />
+        </mxCell>
+        <mxCell id="Relation1" edge="1" parent="1" source="Cart" target="Users" style="endArrow=blockThin;strokeColor=#000000;strokeWidth=2;">
+          <mxGeometry relative="1" />
+        </mxCell>
+        <mxCell id="Relation2" edge="1" parent="1" source="Cart" target="Products" style="endArrow=blockThin;strokeColor=#000000;strokeWidth=2;">
+          <mxGeometry relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
